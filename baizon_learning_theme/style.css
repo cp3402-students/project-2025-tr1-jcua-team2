@@ -989,5 +989,27 @@ textarea {
     margin-bottom: 1.5rem;
   }
 }
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.post-item {
+  width: calc(33.333% - 1.33rem);
+}
+
+/* Stack the posts on mobile/tablet devices */
+@media (max-width: 1024px) {
+  .post-item {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

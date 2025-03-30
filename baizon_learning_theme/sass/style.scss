@@ -179,3 +179,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     margin-bottom: 1.5rem;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; // Space between posts
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.post-item {
+  width: calc(33.333% - 1.33rem);
+}
+
+/* Stack the posts on mobile/tablet devices */
+@media (max-width: 1024px) {
+  .post-item {
+    width: 100%;
+  }
+}
