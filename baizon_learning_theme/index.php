@@ -54,6 +54,11 @@ get_header();
 				<?php endwhile; ?>
 			</div>
 
+			<!-- Enrol Now Button -->
+			<div class="enrol-now-container">
+				<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
+			</div>
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
