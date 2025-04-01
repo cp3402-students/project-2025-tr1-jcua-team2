@@ -17,6 +17,8 @@
 6. Push your changes to github ```git push -u origin branch-feature-name```. Note: origin is the name given to the remote repository when first setting up the repo. Verify your remote repository name with ```git remote -v```
 7. The pull request will then be created in Github. Login to github and view the pull request. If the merge is not overwriting other work, and is just contributing, the merge can be done with no conflicts. Otherwise, request another member to review the pull request before merging.
 8. You can switch your local git repository back to the master branch with the command ```git switch master```
+9. Update your git repository by performing a git pull to bring your local branch back into sync ```git pull origin master```
+
 
 # Checks required before pushing to production
 - [ ] Create all required basic pages to fulfil requirements laid out by the client
