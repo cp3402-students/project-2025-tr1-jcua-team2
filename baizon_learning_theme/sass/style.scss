@@ -112,6 +112,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   align-items: center;
   text-align: center;
   width: 100%;
+  background-color: #fff;
+}
+
+.site-title a {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #B5E51D;
+}
+
+.site-description {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .site-branding {
@@ -119,6 +137,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #4A90E2;
 }
 
 /*--------------------------------------------------------------
@@ -196,10 +228,39 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .post-item {
   width: calc(32% - 1.33rem);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 20px;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-item h2 {
+  color: #4A90E2;
+  margin-bottom: 10px;
+}
+
+.post-item a {
+  text-decoration: none;
+  color: #4A90E2;
+}
+
+.post-item a:hover {
+  color: #191970;
 }
 
 /* Stack the posts on mobile/tablet devices */
 @media (max-width: 1024px) {
+  .post-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
   .post-item {
     width: 100%;
   }
@@ -219,8 +280,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .hero-container {
   display: flex;
-  width: 200%; // Each slide takes full width, making it 300% for 3 slides
-  animation: heroScroll 12s infinite ease-in-out;
+  width: 100%; // Each slide takes full width, making it 300% for 3 slides
 }
 
 .hero-slide {
@@ -232,14 +292,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .hero-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  object-fit: cover;
 }
 
-/* Hero Banner Animation */
-@keyframes heroScroll {
-  0%, 50% { transform: translateX(0); } // Show first image for 4s
-  55%, 100% { transform: translateX(-100vw); } // Show second image for 4s
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -254,7 +326,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .enrol-now-button {
   display: inline-block;
-  width: 30%;
+  width: 15%;
   padding: 15px 30px;
   background-color: #B5E51D; /* Green background color */
   color: white;
@@ -268,6 +340,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .enrol-now-button:hover {
   background-color: #7C9114; /* Darker green when hovered */
+}
+
+@media (max-width: 600px) {
+  .enrol-now-button {
+    width: 90%;
+  }
 }
 
 /*--------------------------------------------------------------

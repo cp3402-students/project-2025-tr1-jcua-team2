@@ -8,18 +8,10 @@ get_header();
 			<div class="hero-slide">
 				<a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-image-1.jpg" alt="Slide 1">
-	<!--				<div class="hero-text">-->
-	<!--					<h2>Welcome to Our Website</h2>-->
-	<!--					<p>Discover amazing content and insights.</p>-->
-	<!--				</div>-->
-			</div>
-			<div class="hero-slide">
-				<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-image-2.jpg" alt="Slide 2">
-	<!--				<div class="hero-text">-->
-	<!--					<h2>Learn & Grow</h2>-->
-	<!--					<p>Explore our latest posts and resources.</p>-->
-	<!--				</div>-->
+					<div class="hero-text">
+						<h2>Welcome to Baizon Learning Center</h2>
+						<p>Empowering students with excellence in education.</p>
+					</div>
 			</div>
 		</div>
 	</section>
