@@ -269,3 +269,43 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .enrol-now-button:hover {
   background-color: #7C9114; /* Darker green when hovered */
 }
+
+/*--------------------------------------------------------------
+# Single Post Pages - single.php
+--------------------------------------------------------------*/
+
+.single-post-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.single-post-container .entry-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.single-post-container .entry-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left; /* Keep main content left-aligned for readability */
+}
+
+.single-post-container .post-navigation {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.single-post-container .comment-area {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Match the post layout as home page on mobile/tablet devices */
+@media (max-width: 1024px) {
+  .single-post-container {
+    width: 100%;
+  }
+}
