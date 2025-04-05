@@ -28,10 +28,12 @@ get_header();
 			endwhile; // End of the loop.
 			?>
 
-			<!-- Enrol Now Button -->
-			<div class="enrol-now-container">
-				<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
-			</div>
+			<?php if ( ! has_category( 'registration')) : ?>
+				<!-- Enrol Now Button -->
+				<div class="enrol-now-container">
+					<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
+				</div>
+			<?php endif; ?>
 
 			<?php
 			// If comments are open or we have at least one comment, load up the comment template.
