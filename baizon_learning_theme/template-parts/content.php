@@ -20,12 +20,13 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				baizon_learning_theme_posted_on();
-				baizon_learning_theme_posted_by();
-				?>
-			</div><!-- .entry-meta -->
+<!--			<div class="entry-meta">-->
+<!--				--><?php
+//				baizon_learning_theme_posted_on();
+//				baizon_learning_theme_posted_by();
+//				?>
+<!--			</div>-->
+			<!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -33,20 +34,25 @@
 
 	<div class="entry-content">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
+		if ( has_category( 'home-page-post' ) && ! is_singular() ) : ?>
+			<p><?php echo wp_trim_words( get_the_content(), 30, '...' ); ?></p>
+			<a href="<?php the_permalink(); ?>" class="read-more-link">Read More</a>
+		<?php else :
+			the_content(
+				sprintf(
+					wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'baizon_learning_theme' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'baizon_learning_theme' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
+				)
+			);
+		endif;
 
 		wp_link_pages(
 			array(
@@ -56,8 +62,3 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php baizon_learning_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

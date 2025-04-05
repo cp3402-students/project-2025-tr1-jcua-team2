@@ -32,7 +32,7 @@
 				<h2>Quick Links</h2>
 				<?php
 				wp_nav_menu( array(
-					'theme_location' => 'primary',
+					'theme_location' => 'menu-1',
 					'container'      => 'nav',
 					'menu_class'     => 'footer-menu',
 				));
