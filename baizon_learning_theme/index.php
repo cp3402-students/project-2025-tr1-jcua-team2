@@ -6,7 +6,7 @@ get_header();
 	<section class="hero-banner">
 		<div class="hero-container">
 			<div class="hero-slide">
-				<a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>" target="_blank">
+				<a href="<?php echo get_permalink( get_post_by_slug( 'about' ) ); ?>" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-image-1.jpg" alt="Slide 1">
 					<div class="hero-text">
 						<h2>Welcome to Baizon Learning Center</h2>

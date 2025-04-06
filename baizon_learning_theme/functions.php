@@ -175,3 +175,20 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Function to get a post by its slug
+ */
+function get_post_by_slug( $slug) {
+$args = array(
+	'name' => $slug,
+	'post_type' => 'post',
+	'posts_per_page' => 1
+);
+$query = new WP_Query( $args );
+
+if ( $query->have_posts() ) {
+	return $query->posts[0];
+}
+return null;
+}
