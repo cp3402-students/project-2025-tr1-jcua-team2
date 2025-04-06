@@ -22,10 +22,10 @@
 
 			<div class="footer-section">
 				<h2>Contact Information</h2>
+				<p>Email: <a href="mailto:BaizonnLearning@gmail.com">BaizonnLearning@gmail.com</a></p>
+				<p>Phone: <a href="tel:+6562811816">(+65) 62811816</a></p>
 				<p>1007A Upper Serangoon Road</p>
 				<p>Singapore, 534745</p>
-				<p>Email: BaizonnLearning@gmail.com</p>
-				<p>Phone: (+65) 62811816</p>
 			</div>
 
 			<div class="footer-section">
