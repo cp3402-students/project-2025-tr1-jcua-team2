@@ -20,7 +20,7 @@ get_header();
 		<?php
 		// Query arguments to fetch posts from the "home-page-posts" category
 		$args = array(
-			'category_name' => 'home-page-post', // Change this to the desired category slug
+			'category_name' => 'home-page-post',
 			'posts_per_page' => 9, // Number of posts to display
 		);
 
@@ -48,7 +48,7 @@ get_header();
 
 			<!-- Enrol Now Button -->
 			<div class="enrol-now-container">
-				<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
+				<a href="<?php echo get_permalink( get_post_by_slug( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
 			</div>
 
 			<?php the_posts_navigation(); ?>

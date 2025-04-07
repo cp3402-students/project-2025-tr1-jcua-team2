@@ -16,18 +16,9 @@
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		endif; ?>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-<!--			<div class="entry-meta">-->
-<!--				--><?php
-//				baizon_learning_theme_posted_on();
-//				baizon_learning_theme_posted_by();
-//				?>
-<!--			</div>-->
-			<!-- .entry-meta -->
-		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<?php baizon_learning_theme_post_thumbnail(); ?>

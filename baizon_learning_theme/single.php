@@ -25,13 +25,13 @@ get_header();
 //					)
 //				);
 
-			endwhile; // End of the loop.
+			endwhile;
 			?>
 
 			<?php if ( ! has_category( 'registration')) : ?>
 				<!-- Enrol Now Button -->
 				<div class="enrol-now-container">
-					<a href="<?php echo get_permalink( get_page_by_path( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
+					<a href="<?php echo get_permalink( get_post_by_slug( 'registration' ) ); ?>" class="enrol-now-button">Enrol Now</a>
 				</div>
 			<?php endif; ?>
 
