@@ -17,21 +17,21 @@ Based on the "\_s" theme, the baizon learning theme is the wordpress theme used 
 </ul>
 
 <h1>CSS files</h1>
-<h2>style.css</h2>
-The main style file, to be loaded on the majority of pages.
+<h2>style.scss</h2>
+The main style file to modify style changes. This file generates the necessary css files.
 <h2>style-rtl.css</h2>
 The style file that style.css was built off of
 
 <h1>Other folders</h1>
 <h2>assets</h2>
-Every asset (Mostly image files) that is required for displaying content.
+Every asset (Mostly image files) that is required for displaying content. This is where index.php pulls the hero images from.
 <h2>inc</h2>
 Template files that is built upon in other php files
 <h2>js</h2>
-Javascript required for the site to function
+Javascript required for the site to function and performs actions such as the hamburger menu when displaying on smaller screens.
 <h2>languages</h2>
 For future development, the folder to contain localization files in other languages
 <h2>sass</h2>
-Components, files and plugins that are used within the style of this theme.
+Components, files and plugins that are used within the style of this theme and where the main style.scss file is stored.
 <h2>template-parts</h2>
 Snippets of PHP files that can be built upon to make a coherent theme from the base theme.
