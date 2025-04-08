@@ -19,4 +19,4 @@ The documentation of the theme created specifically for this website
 
 https://github.com/cp3402-students/project-2025-tr1-jcua-team2/blob/master/theme.md
 <h3>baizon_learning_theme</h3>
-All the required files to use the theme itself.
+All the required files to use the theme itself which can be read further in theme.md and the uses of such a theme are recorded in site.md
